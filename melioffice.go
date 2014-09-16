@@ -61,7 +61,7 @@ func (o *office) flattenPoint(p Point) int {
 }
 
 func (o *office) toPoint(fp int) Point {
-  y := int( fp / o.officeHeight )
+  y := int( fp / o.officeWidth )
   x := int( fp - o.officeWidth * y )
 
   return Point{x, y}
@@ -73,17 +73,19 @@ func (o *office) addEdges() {
 
       if _, boss := o.boss[p]; !boss {
 
+        point := o.toPoint(p)
         p2 := p + 1
-        y := o.toPoint(p).y
 
-        if _, boss := o.boss[p2]; !boss && y == o.toPoint(p2).y {
-          o.graph.addEdge(p, p2) //println(p1.toString() + p2.toString())
+        if _, boss := o.boss[p2]; !boss && point.y == o.toPoint(p2).y {
+          o.graph.addEdge(p, p2)//; print(p); print("*"); println(p2)
         }
 
-        if y > 0 {
-          p3 := p - o.officeWidth
+        if point.y > 0 {
+          point3 := Point{point.x, point.y - 1}
+          p3 := o.flattenPoint(point3)
+
           if _, boss := o.boss[p3]; !boss {
-            o.graph.addEdge(p, p3) //println(p1.toString() + p3.toString())
+            o.graph.addEdge(p, p3)  //print("inside y: "); print(p); print("*"); println(p3)
           }
         }
 
