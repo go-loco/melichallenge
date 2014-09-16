@@ -1,0 +1,7 @@
+Meli Challenge written in Go
+
+After installing Go just run:
+go get github.com/xzip/melichallenge
+go test
+
+There are a few examples on melioffice_test.go
