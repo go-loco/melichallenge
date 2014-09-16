@@ -1,7 +1,6 @@
 Meli Challenge written in Go
 
-After installing Go just run:
+After installing Go just run from the command line:
 go get github.com/xzip/melichallenge
-go test
 
-There are a few examples on melioffice_test.go
+There are a few examples on melioffice_test.go. You can run them on the package's folder "go test"
