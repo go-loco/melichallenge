@@ -1,4 +1,4 @@
-package meli
+package melichallenge
 
 import "strconv"
 

@@ -2,7 +2,7 @@ package tests
 
 import (
 	"testing"
-	. "github.com/xzip/meli"
+	. "github.com/xzip/melichallenge"
 )
 
 func TestMeli1(t *testing.T) {
