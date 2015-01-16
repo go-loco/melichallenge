@@ -1,3 +1,5 @@
+[![Build Status](https://drone.io/github.com/xzip/melichallenge/status.png)](https://drone.io/github.com/xzip/melichallenge/latest)
+
 Meli Challenge written in Go
 
 After installing Go just run from the command line:
