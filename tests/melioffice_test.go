@@ -1,8 +1,8 @@
 package tests
 
 import (
-	"testing"
 	. "github.com/xzip/melichallenge"
+	"testing"
 )
 
 func TestMeli1(t *testing.T) {
