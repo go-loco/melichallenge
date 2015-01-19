@@ -14,6 +14,6 @@ func (p *Point) Equal(point Point) bool {
 	}
 }
 
-func (p *Point) ToString() string {
+func (p *Point) String() string {
 	return ("(" + strconv.Itoa(p.X) + ", " + strconv.Itoa(p.Y) + ")")
 }

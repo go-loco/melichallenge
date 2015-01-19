@@ -105,7 +105,7 @@ func (o *office) ShortestPath() string {
 	steps := 1
 	start := o.me
 	pStart := o.toPoint(start)
-	result := pStart.toString()
+	result := pStart.String()
 
 	for t := targets.Front(); t != nil; t = t.Next() {
 		target := t.Value.(map[int]int)
@@ -116,7 +116,7 @@ func (o *office) ShortestPath() string {
 		for e := path.Front(); e != nil; e = e.Next() {
 			start = e.Value.(int)
 			p := o.toPoint(start)
-			result += p.toString()
+			result += p.String()
 		}
 
 	}
