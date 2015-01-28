@@ -1,4 +1,4 @@
-[![Build Status](https://drone.io/github.com/xzip/melichallenge/status.png)](https://drone.io/github.com/xzip/melichallenge/latest)
+[![Build Status](https://travis-ci.org/xzip/mellichallenge.svg?branch=master)](https://travis-ci.org/xzip/mellichallenge)
 
 Meli Challenge written in Go
 
