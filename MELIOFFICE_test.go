@@ -1,9 +1,6 @@
-package tests
+package melichallenge
 
-import (
-	. "github.com/xzip/melichallenge"
-	"testing"
-)
+import "testing"
 
 func TestMeli1(t *testing.T) {
 

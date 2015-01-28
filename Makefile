@@ -1,4 +1,4 @@
 test:
-	go test ./tests/
+	go test -cover
 build:
-	go building
+	go build
