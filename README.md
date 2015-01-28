@@ -1,5 +1,9 @@
+[![Build Status](https://travis-ci.org/xzip/melichallenge.svg?branch=master)](https://travis-ci.org/xzip/melichallenge)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/xzip/melichallenge)
 
-Meli Challenge written in Go
+
+#Meli Challenge 
+Written in Go
 
 After installing Go just run from the command line:
 go get github.com/xzip/melichallenge
