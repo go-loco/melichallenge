@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/xzip/melichallenge.svg?branch=master)](https://travis-ci.org/xzip/melichallenge#)
 
 Meli Challenge written in Go
 
