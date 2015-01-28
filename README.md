@@ -1,8 +1,9 @@
+Meli Challenge
+========
+
 [![Build Status](https://travis-ci.org/xzip/melichallenge.svg?branch=master)](https://travis-ci.org/xzip/melichallenge)
 [![Release](http://img.shields.io/github/release/xzip/melichallenge.svg?style=flat)](https://github.com/xzip/melichallenge/releases)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/xzip/melichallenge)
-Meli Challenge
-========
 
 Written in Go
 
