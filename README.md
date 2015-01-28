@@ -2,7 +2,6 @@
 [![Release](http://img.shields.io/github/release/xzip/melichallenge.svg?style=flat)](https://github.com/xzip/melichallenge/releases)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/xzip/melichallenge)
 
-
 #Meli Challenge 
 Written in Go
 
