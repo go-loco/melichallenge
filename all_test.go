@@ -11,7 +11,7 @@ func TestMeli1(t *testing.T) {
 	boss := []Point{Point{1, 2}, Point{2, 2}, Point{2, 3}, Point{2, 4}, Point{3, 2}, Point{3, 3}, Point{3, 4}, Point{4, 2}}
 	N, M := 8, 8
 
-	meliOffice := NewMeliOffice(me, coffee, candy, chics, boss, N, M)
+	meliOffice := New(me, coffee, candy, chics, boss, N, M)
 
 	println(meliOffice.ShortestPath())
 }
@@ -25,7 +25,7 @@ func TestMeli2(t *testing.T) {
 	boss := []Point{Point{1, 2}}
 	N, M := 8, 8
 
-	meliOffice := NewMeliOffice(me, coffee, candy, chics, boss, N, M)
+	meliOffice := New(me, coffee, candy, chics, boss, N, M)
 
 	println(meliOffice.ShortestPath())
 }
@@ -39,7 +39,7 @@ func TestMeli3(t *testing.T) {
 	boss := []Point{Point{1, 2}} //, Point{2,2}, Point{2,3}, Point{2,4}, Point{3,2}, Point{3,3}, Point{3,4}, Point{4,2} }
 	N, M := 8, 8
 
-	meliOffice := NewMeliOffice(me, coffee, candy, chics, boss, N, M)
+	meliOffice := New(me, coffee, candy, chics, boss, N, M)
 
 	println(meliOffice.ShortestPath())
 }
@@ -58,7 +58,7 @@ func TestMeli4(t *testing.T) {
 	}
 	N, M := 16, 15
 
-	meliOffice := NewMeliOffice(me, coffee, candy, chics, boss, N, M)
+	meliOffice := New(me, coffee, candy, chics, boss, N, M)
 
 	println(meliOffice.ShortestPath())
 }

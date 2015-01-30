@@ -20,7 +20,7 @@ type office struct {
 	graph        *graph
 }
 
-func NewMeliOffice(me, coffee, candy Point, chics, boss []Point, officeWidth int, officeHeight int) MeliOffice {
+func New(me, coffee, candy Point, chics, boss []Point, officeWidth int, officeHeight int) MeliOffice {
 
 	office := new(office)
 
