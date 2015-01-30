@@ -5,9 +5,14 @@ Meli Challenge
 [![Release](http://img.shields.io/github/release/xzip/melichallenge.svg?style=flat)](https://github.com/xzip/melichallenge/releases)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/xzip/melichallenge)
 
-Written in Go
+Written in Go (golang)
 
-After installing Go just run from the command line:
-go get github.com/xzip/melichallenge
+1 Install go
+	http://golang.org/dl/
+	
+2 Get the package:
+	go get github.com/xzip/melichallenge
 
-There are a few examples on melioffice_test.go. You can run them on the package's folder with the command "go test"
+3 In the package folder, run the tests
+	go test
+
