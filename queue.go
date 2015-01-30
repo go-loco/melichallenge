@@ -30,22 +30,22 @@ func (q *queue) dequeue() interface{} {
 
 	if q.size == 0 {
 		return nil
-	} else {
-		n := q.head
-		r := q.head.element
-		q.size--
-
-		if q.size == 0 {
-			q.head = nil
-			q.tail = nil
-		} else {
-			q.head = q.head.next
-		}
-
-		n.element = nil
-		n.next = nil
-		n = nil
-
-		return r
 	}
+
+	n := q.head
+	r := q.head.element
+	q.size--
+
+	if q.size == 0 {
+		q.head = nil
+		q.tail = nil
+	} else {
+		q.head = q.head.next
+	}
+
+	n.element = nil
+	n.next = nil
+	n = nil
+
+	return r
 }

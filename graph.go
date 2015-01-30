@@ -19,7 +19,7 @@ func newGraph(vertices int) *graph {
 func (g *graph) addEdge(v, w int) {
 	g.adj[v].PushBack(w)
 	g.adj[w].PushBack(v)
-	g.edges += 1
+	g.edges++
 }
 
 func (g *graph) adjacents(vertice int) *list.List {

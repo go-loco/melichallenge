@@ -9,9 +9,9 @@ type Point struct {
 func (p *Point) Equal(point Point) bool {
 	if point.X == p.X && point.Y == p.Y {
 		return true
-	} else {
-		return false
 	}
+
+	return false
 }
 
 func (p *Point) String() string {
