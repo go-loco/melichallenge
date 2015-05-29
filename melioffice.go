@@ -5,11 +5,7 @@ import (
 	"strconv"
 )
 
-type MeliOffice interface {
-	ShortestPath() string
-}
-
-type office struct {
+type MeliOffice struct {
 	me           int
 	coffee       int
 	candy        int
@@ -18,11 +14,14 @@ type office struct {
 	officeWidth  int
 	officeHeight int
 	graph        *graph
+
+	initialized bool
 }
 
-func New(me, coffee, candy Point, chics, boss []Point, officeWidth int, officeHeight int) MeliOffice {
+func New(me, coffee, candy Point, chics, boss []Point, officeWidth int, officeHeight int) *MeliOffice {
 
-	office := new(office)
+	office := new(MeliOffice)
+	office.initialized = true
 
 	office.officeWidth = officeWidth
 	office.officeHeight = officeHeight
@@ -39,63 +38,11 @@ func New(me, coffee, candy Point, chics, boss []Point, officeWidth int, officeHe
 	return office
 }
 
-func (o *office) pToMap(s []Point) map[int]int {
+func (o *MeliOffice) ShortestPath() string {
 
-	m := make(map[int]int)
-	for _, v := range s {
-		fp := o.flattenPoint(v)
-		m[fp] = fp
-	}
-
-	return m
-}
-
-func (o *office) iToMap(v int) map[int]int {
-	m := make(map[int]int)
-	m[v] = v
-	return m
-}
-
-func (o *office) flattenPoint(p Point) int {
-	return ((p.Y * o.officeWidth) + p.X)
-}
-
-func (o *office) toPoint(fp int) Point {
-	y := int(fp / o.officeWidth)
-	x := int(fp - o.officeWidth*y)
-
-	return Point{x, y}
-}
-
-func (o *office) addEdges() {
-
-	for p := 0; p < o.graph.vertices; p++ {
-
-		if _, boss := o.boss[p]; !boss {
-
-			point := o.toPoint(p)
-			p2 := p + 1
-
-			if _, boss := o.boss[p2]; !boss && point.Y == o.toPoint(p2).Y {
-				o.graph.addEdge(p, p2) //; print(p); print("*"); println(p2)
-			}
-
-			if point.Y > 0 {
-				point3 := Point{point.X, point.Y - 1}
-				p3 := o.flattenPoint(point3)
-
-				if _, boss := o.boss[p3]; !boss {
-					o.graph.addEdge(p, p3) //print("inside y: "); print(p); print("*"); println(p3)
-				}
-			}
-
-		} //boss
-
-	}
-
-}
-
-func (o *office) ShortestPath() string {
+	/*if !initialized {
+		return "", errors.New("")
+	}*/
 
 	targets := new(list.List)
 	targets.PushFront(o.chics)
@@ -122,5 +69,61 @@ func (o *office) ShortestPath() string {
 	}
 
 	return "[" + result + "], " + strconv.Itoa(steps)
+
+}
+
+func (o *MeliOffice) pToMap(s []Point) map[int]int {
+
+	m := make(map[int]int)
+	for _, v := range s {
+		fp := o.flattenPoint(v)
+		m[fp] = fp
+	}
+
+	return m
+}
+
+func (o *MeliOffice) iToMap(v int) map[int]int {
+	m := make(map[int]int)
+	m[v] = v
+	return m
+}
+
+func (o *MeliOffice) flattenPoint(p Point) int {
+	return ((p.Y * o.officeWidth) + p.X)
+}
+
+func (o *MeliOffice) toPoint(fp int) Point {
+	y := int(fp / o.officeWidth)
+	x := int(fp - o.officeWidth*y)
+
+	return Point{x, y}
+}
+
+func (o *MeliOffice) addEdges() {
+
+	for p := 0; p < o.graph.vertices; p++ {
+
+		if _, boss := o.boss[p]; !boss {
+
+			point := o.toPoint(p)
+			p2 := p + 1
+
+			if _, boss := o.boss[p2]; !boss && point.Y == o.toPoint(p2).Y {
+				o.graph.addEdge(p, p2)
+			}
+
+			if point.Y > 0 {
+				point3 := Point{point.X, point.Y - 1}
+				p3 := o.flattenPoint(point3)
+
+				if _, boss := o.boss[p3]; !boss {
+					o.graph.addEdge(p, p3)
+				}
+			}
+
+		} //boss
+
+	}
 
 }
