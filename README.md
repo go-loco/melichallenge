@@ -15,3 +15,6 @@ Written in Go (golang)
 2 Get the package: go get github.com/xzip/melichallenge
 
 3 In the package folder, run the tests: go test
+
+
+Have fun
