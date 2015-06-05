@@ -5,6 +5,7 @@ Meli Challenge
 
 [![Build Status](https://travis-ci.org/xzip/melichallenge.svg?branch=master)](https://travis-ci.org/xzip/melichallenge)
 [![Release](https://img.shields.io/github/release/xzip/melichallenge.svg?style=flat)](https://github.com/xzip/melichallenge/releases)
+[![Coverage](http://gocover.io/_badge/github.com/xzip/melichallenge)](http://gocover.io/github.com/xzip/melichallenge) [![GoDoc](http://godoc.org/github.com/xzip/melichallenge?status.png)](http://godoc.org/github.com/xzip/melichallenge)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/xzip/melichallenge)
 
 Written in Go (golang)
