@@ -4,6 +4,7 @@ Meli Challenge
 [![Join the chat at https://gitter.im/go-loco/melichallenge](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/go-loco/melichallenge?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Build Status](https://travis-ci.org/go-loco/melichallenge.svg?branch=master)](https://travis-ci.org/go-loco/melichallenge)
+[![Coverage Status](https://coveralls.io/repos/github/go-loco/melichallenge/badge.svg?branch=master)](https://coveralls.io/github/go-loco/melichallenge?branch=master)
 [![Release](https://img.shields.io/github/release/go-loco/melichallenge.svg?style=flat)](https://github.com/go-loco/melichallenge/releases)
 [![Coverage](http://gocover.io/_badge/github.com/go-loco/melichallenge)](http://gocover.io/github.com/go-loco/melichallenge)
 [![GoDoc](http://godoc.org/github.com/go-loco/melichallenge?status.svg)](http://godoc.org/github.com/go-loco/melichallenge)
