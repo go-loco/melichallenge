@@ -5,8 +5,8 @@ Meli Challenge
 
 [![Build Status](https://travis-ci.org/go-loco/melichallenge.svg?branch=master)](https://travis-ci.org/go-loco/melichallenge)
 [![Coverage Status](https://coveralls.io/repos/github/go-loco/melichallenge/badge.svg?branch=master)](https://coveralls.io/github/go-loco/melichallenge?branch=master)
+[![GoReport](https://goreportcard.com/badge/go-loco/restful/rest)](http://goreportcard.com/report/go-loco/restful/rest)
 [![Release](https://img.shields.io/github/release/go-loco/melichallenge.svg?style=flat)](https://github.com/go-loco/melichallenge/releases)
-[![Coverage](http://gocover.io/_badge/github.com/go-loco/melichallenge)](http://gocover.io/github.com/go-loco/melichallenge)
 [![GoDoc](http://godoc.org/github.com/go-loco/melichallenge?status.svg)](http://godoc.org/github.com/go-loco/melichallenge)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://github.com/go-loco/melichallenge)
 
